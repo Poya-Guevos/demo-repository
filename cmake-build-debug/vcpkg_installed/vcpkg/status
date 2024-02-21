@@ -1,0 +1,213 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4bc68e2199767aef6aa5a76013809109163e27aa904f82a2ca2dec98915e7b38
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2023-05-04
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8d917d0743181d55334f04d41f2074979ac8601d74ec4e1fdf0b2c254b534a5d
+Status: install ok installed
+
+Package: sdl2
+Version: 2.30.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bebbbebee9d11b93aab7b7a6a8384e642f19593c07c96d8388b1083c4b491d23
+Description: Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.
+Status: install ok installed
+
+Package: sdl2-gfx
+Version: 1.0.4
+Port-Version: 11
+Depends: sdl2, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 56014c4e14877ad1f30eb5fd12826663048b6cdb838f69d7f33a9d011ba202a7
+Description: Graphics primitives (line, circle, rectangle etc.) with AA support, rotozoomer and other drawing related support functions wrapped up in a C based add-on library for the Simple Direct Media (SDL) cross-platform API layer.
+Status: purge ok not-installed
+
+Package: zlib
+Version: 1.3.1
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bc178ac6bac58be15916e4b7d3d9b725801d92ce593c604094012dd7eca46549
+Description: A compression library
+Status: install ok installed
+
+Package: libpng
+Version: 1.6.40
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ffc734a066c4fa5ce7d4b2854204ea600e82524ae4aa70a38a94b1a567985d45
+Description: libpng is a library implementing an interface for reading and writing PNG (Portable Network Graphics) format files
+Status: install ok installed
+
+Package: sdl2-image
+Version: 2.6.3
+Port-Version: 1
+Depends: libpng, sdl2, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8513d4fefb15f8ba83441a6afcfd748caa89ffa9bac0e3488d16f145052899aa
+Description: SDL_image is an image file loading library. It loads images as SDL surfaces and textures, and supports the following formats: BMP, GIF, JPEG, LBM, PCX, PNG, PNM, TGA, TIFF, WEBP, XCF, XPM, XV
+Status: install ok installed
+
+Package: wavpack
+Version: 5.6.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: aeeba8d060fff9745aa7adf7d5742d5aec4be5647f970fee04fa61c1902fda33
+Description: WavPack encode/decode library, command-line programs, and several plugins
+Status: install ok installed
+
+Package: libogg
+Version: 1.3.5
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6b34a603404588af903ef9e5dc4e598968cdfb5bb3107b0aba31b59fc6ec02e3
+Description: Ogg is a multimedia container format, and the native file and stream format for the Xiph.org multimedia codecs.
+Status: install ok installed
+
+Package: libvorbis
+Version: 1.3.7
+Port-Version: 2
+Depends: libogg, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0cb59559838103affe371b068cb3e14b86cba8b23f285ae67ce94f798eceb856
+Description: Ogg Vorbis is a fully open, non-proprietary, patent-and-royalty-free, general-purpose compressed audio format
+Status: install ok installed
+
+Package: sdl2-mixer
+Version: 2.8.0
+Port-Version: 1
+Depends: libvorbis, sdl2, vcpkg-cmake, vcpkg-cmake-config, wavpack
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 8ea70a39802a10e46ac812be8f6b873d883b3195a86fb8566ca33a033a6c3e7e
+Description: Multi-channel audio mixer library for SDL.
+Status: install ok installed
+
+Package: sdl2-mixer-ext
+Version: 2.6.0
+Port-Version: 1
+Depends: sdl2, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 745f309da4375482886a7bf28167606eb6dc33540aef255dcab1eceef808da18
+Description: An audio mixer library based on the SDL library, a fork of SDL_mixer
+Status: purge ok not-installed
+
+Package: sdl2-net
+Version: 2.2.0
+Port-Version: 3
+Depends: sdl2, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bcc230bb3148703b2f8457932b31f74a51a37d377922405042408256a291298d
+Description: Networking library for SDL
+Status: purge ok not-installed
+
+Package: bzip2
+Version: 1.0.8
+Port-Version: 5
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 467c4ddd3edd97b377c95c77cd1a8b0f36e2578671cea725ec06db8575adf59f
+Description: bzip2 is a freely available, patent free, high-quality data compressor. It typically compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical compressors), whilst being around twice as fast at compression and six times faster at decompression.
+Default-Features: tool
+Status: purge ok not-installed
+
+Package: bzip2
+Feature: tool
+Architecture: x64-windows
+Multi-Arch: same
+Description: Builds bzip2 executable
+Status: purge ok not-installed
+
+Package: brotli
+Version: 1.1.0
+Port-Version: 1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6134d6d03d518f8ec50856da4c17cbd2a15ff7ce4ed535dcc89a37ce147b65e7
+Description: a generic-purpose lossless compression algorithm that compresses data using a combination of a modern variant of the LZ77 algorithm, Huffman coding and 2nd order context modeling.
+Status: purge ok not-installed
+
+Package: freetype
+Version: 2.13.2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: bd57775d07b48e713f74bf86ded0de279cd41e45c1fe5eb8bfbd43e0053e658e
+Description: A library to render fonts.
+Default-Features: brotli, bzip2, png, zlib
+Status: purge ok not-installed
+
+Package: freetype
+Feature: brotli
+Depends: brotli
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support decompression of WOFF2 streams
+Status: purge ok not-installed
+
+Package: freetype
+Feature: bzip2
+Depends: bzip2
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support bzip2 compressed fonts.
+Status: purge ok not-installed
+
+Package: freetype
+Feature: png
+Depends: libpng
+Architecture: x64-windows
+Multi-Arch: same
+Description: Support PNG compressed OpenType embedded bitmaps.
+Status: purge ok not-installed
+
+Package: freetype
+Feature: zlib
+Depends: zlib
+Architecture: x64-windows
+Multi-Arch: same
+Description: Use zlib instead of internal library for DEFLATE
+Status: purge ok not-installed
+
+Package: sdl2-ttf
+Version: 2.20.2
+Port-Version: 1
+Depends: freetype, sdl2, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: b2da740243650602eaf59315642e36ebba067f2b28e2f9e395cff0d01212516b
+Description: A library for rendering TrueType fonts with SDL
+Status: purge ok not-installed
+
+Package: sdl2pp
+Version: 0.16.1
+Port-Version: 8
+Depends: sdl2, sdl2-image, sdl2-mixer, sdl2-ttf, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: de9ba9de145c967169bca6cf00e015ad5e1bdcc3f02483b15cceffdd7067b04a
+Description: C++11 bindings/wrapper for SDL2
+Status: purge ok not-installed
+
