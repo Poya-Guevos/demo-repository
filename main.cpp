@@ -2,10 +2,7 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 
-#include <fmt/core.h>
-
 int main() {
-    fmt::print("Hello World!\n");
 
     // Initialize SDL
     SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO);
