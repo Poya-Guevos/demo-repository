@@ -4,17 +4,17 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Users/mariodm1/CLionProjects/demo-repository
-BuildDirectory: C:/Users/mariodm1/CLionProjects/demo-repository/cmake-build-debug
+SourceDirectory: C:/Users/Hugo/Documents/GitHub/demo-repository
+BuildDirectory: C:/Users/Hugo/Documents/GitHub/demo-repository/cmake-build-debug
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: TR12-202-43
+Site: DESKTOP-C9VI1CK
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Win32-ninja
+BuildName: Win32-mingw32-make
 
 # Subprojects
 LabelsForSubprojects: 
@@ -27,8 +27,8 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Users/mariodm1/AppData/Local/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe" "C:/Users/mariodm1/CLionProjects/demo-repository"
-MakeCommand: "C:\Users\mariodm1\AppData\Local\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "C:/Program Files/JetBrains/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe" "C:/Users/Hugo/Documents/GitHub/demo-repository"
+MakeCommand: C:/Program\ Files/JetBrains/CLion\ 2023.3.4/bin/cmake/win/x64/bin/cmake.exe --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -45,7 +45,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: C:/Program Files/Git/bin/git.exe
+GITCommand: C:/Program Files/Git/cmd/git.exe
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -58,12 +58,12 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: C:/Program Files/Git/bin/git.exe
+UpdateCommand: C:/Program Files/Git/cmd/git.exe
 UpdateOptions: 
 UpdateType: git
 
 # Compiler info
-Compiler: C:/Users/mariodm1/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe
+Compiler: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/g++.exe
 CompilerVersion: 13.1.0
 
 # Dynamic analysis (MemCheck)
@@ -81,7 +81,7 @@ MemoryCheckCommandOptions:
 MemoryCheckSuppressionFile: 
 
 # Coverage
-CoverageCommand: C:/Users/mariodm1/AppData/Local/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcov.exe
+CoverageCommand: C:/Program Files/JetBrains/CLion 2023.3.4/bin/mingw/bin/gcov.exe
 CoverageExtraFlags: -l
 
 # Testing options

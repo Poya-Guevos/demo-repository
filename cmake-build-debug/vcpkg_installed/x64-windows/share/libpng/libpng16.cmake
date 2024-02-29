@@ -20,7 +20,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_cmake_targets_defined "")
 set(_cmake_targets_not_defined "")
 set(_cmake_expected_targets "")
-foreach(_cmake_expected_target IN ITEMS png_shared)
+foreach(_cmake_expected_target IN ITEMS png)
   list(APPEND _cmake_expected_targets "${_cmake_expected_target}")
   if(TARGET "${_cmake_expected_target}")
     list(APPEND _cmake_targets_defined "${_cmake_expected_target}")
@@ -55,10 +55,10 @@ if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
 
-# Create imported target png_shared
-add_library(png_shared SHARED IMPORTED)
+# Create imported target png
+add_library(png SHARED IMPORTED)
 
-set_target_properties(png_shared PROPERTIES
+set_target_properties(png PROPERTIES
   INTERFACE_LINK_LIBRARIES "\$<\$<NOT:\$<CONFIG:DEBUG>>:${VCPKG_IMPORT_PREFIX}/lib/zlib.lib>;\$<\$<CONFIG:DEBUG>:${VCPKG_IMPORT_PREFIX}/debug/lib/zlibd.lib>"
 )
 

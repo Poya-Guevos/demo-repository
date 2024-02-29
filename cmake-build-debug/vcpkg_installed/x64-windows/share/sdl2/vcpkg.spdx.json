@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/sdl2-x64-windows-2.30.0-fdead6ba-a201-424b-a1ac-fc06dc02ba66",
-  "name": "sdl2:x64-windows@2.30.0 bebbbebee9d11b93aab7b7a6a8384e642f19593c07c96d8388b1083c4b491d23",
+  "documentNamespace": "https://spdx.org/spdxdocs/sdl2-x64-windows-2.28.2-0cebfaa9-78ca-44f6-85d0-36c897daae2c",
+  "name": "sdl2:x64-windows@2.28.2 f0bad522b5d9a2c15bd5d79b9d73ee812c4c13daca4ff76c7cf467253e1d569f",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-8a83681f921b10d86ae626fd833c253f4f8c355b"
     ],
-    "created": "2024-02-21T11:44:59Z"
+    "created": "2024-02-29T11:18:46Z"
   },
   "relationships": [
     {
@@ -77,8 +77,8 @@
     {
       "name": "sdl2",
       "SPDXID": "SPDXRef-port",
-      "versionInfo": "2.30.0",
-      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@4ab64007873e4e383360819f5227ad0747c649d1",
+      "versionInfo": "2.28.2",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg@e2235ea94a5142fe57d9c27f6d2c3307177df933",
       "homepage": "https://www.libsdl.org/download-2.0.php",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",
@@ -89,7 +89,7 @@
     {
       "name": "sdl2:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "bebbbebee9d11b93aab7b7a6a8384e642f19593c07c96d8388b1083c4b491d23",
+      "versionInfo": "f0bad522b5d9a2c15bd5d79b9d73ee812c4c13daca4ff76c7cf467253e1d569f",
       "downloadLocation": "NONE",
       "licenseConcluded": "Zlib",
       "licenseDeclared": "NOASSERTION",
@@ -99,21 +99,21 @@
     {
       "SPDXID": "SPDXRef-resource-1",
       "name": "libsdl-org/SDL",
-      "downloadLocation": "git+https://github.com/libsdl-org/SDL@release-2.30.0",
+      "downloadLocation": "git+https://github.com/libsdl-org/SDL@release-2.28.2",
       "licenseConcluded": "NOASSERTION",
       "licenseDeclared": "NOASSERTION",
       "copyrightText": "NOASSERTION",
       "checksums": [
         {
           "algorithm": "SHA512",
-          "checksumValue": "c7635a83a52f3970a372b804a8631f0a7e6b8d89aed1117bcc54a2040ad0928122175004cf2b42cf84a4fd0f86236f779229eaa63dfa6ca9c89517f999c5ff1c"
+          "checksumValue": "d4ddc1abf84f09b9d2357b5bf2adc224a693767c170a6b778283c2783436d940aee4db4c9628776de28de6c499bbfb04b65f9d9210f4670525248ce5b0d31bee"
         }
       ]
     }
   ],
   "files": [
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/4ab64007873e4e383360819f5227ad0747c649d1/alsa-dep-fix.patch",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/e2235ea94a5142fe57d9c27f6d2c3307177df933/alsa-dep-fix.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -125,7 +125,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/4ab64007873e4e383360819f5227ad0747c649d1/deps.patch",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/e2235ea94a5142fe57d9c27f6d2c3307177df933/deps.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -137,19 +137,19 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/4ab64007873e4e383360819f5227ad0747c649d1/portfile.cmake",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/e2235ea94a5142fe57d9c27f6d2c3307177df933/portfile.cmake",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "4ef09828397ae78f3c5afcaf9dacf66e754c11e6b4bb5db7b9ec0b795958abfc"
+          "checksumValue": "74781907edd15e877e26c147c491baccf63e6e46655f94adaed41fcecbd0cf30"
         }
       ],
       "licenseConcluded": "NOASSERTION",
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/4ab64007873e4e383360819f5227ad0747c649d1/usage",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/e2235ea94a5142fe57d9c27f6d2c3307177df933/usage",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -161,12 +161,12 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/4ab64007873e4e383360819f5227ad0747c649d1/vcpkg.json",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/sdl2/e2235ea94a5142fe57d9c27f6d2c3307177df933/vcpkg.json",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
           "algorithm": "SHA256",
-          "checksumValue": "7b439cfb9f4355851d256a48bd5b696de1a2bdc4fd9a5891b16cbb8cce8b36c2"
+          "checksumValue": "16b0caab41cc853452650b340f2491659f9f5487acddb7d9343f666bc453aa31"
         }
       ],
       "licenseConcluded": "NOASSERTION",

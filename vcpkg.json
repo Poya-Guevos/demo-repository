@@ -1,15 +1,12 @@
 {
   "name" : "demo-repository",
-  "version-string" : "1.0.0",
-  "builtin-baseline" : "13bde2ff13192e1b2fdd37bd9b475c7665ae6ae5",
-  "dependencies" : [ {
-    "name" : "sdl2-image",
-    "version>=" : "2.6.3#1"
+  "version": "1.0.0",
+  "builtin-baseline" : "2c401863dd54a640aeb26ed736c55489c079323b",
+  "dependencies" : [ "sdl2-mixer", "sdl2", "sdl2-image", {
+    "name" : "sdl2"
   }, {
-    "name" : "sdl2-mixer",
-    "version>=" : "2.8.0#1"
+    "name" : "sdl2-image"
   }, {
-    "name" : "sdl2",
-    "version>=" : "2.30.0"
+    "name" : "sdl2-mixer"
   } ]
 }

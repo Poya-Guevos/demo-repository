@@ -15,15 +15,13 @@ set(SDL2MIXER_CMD                   OFF)
 set(SDL2MIXER_FLAC_LIBFLAC          OFF)
 set(SDL2MIXER_FLAC_DRFLAC           OFF)
 
-set(SDL2MIXER_GME                   OFF)
-
 set(SDL2MIXER_MOD                   OFF)
 set(SDL2MIXER_MOD_MODPLUG           OFF)
 set(SDL2MIXER_MOD_XMP               OFF)
 set(SDL2MIXER_MOD_XMP_LITE          OFF)
 
 set(SDL2MIXER_MP3                   OFF)
-set(SDL2MIXER_MP3_MINIMP3           OFF)
+set(SDL2MIXER_MP3_DRMP3             OFF)
 set(SDL2MIXER_MP3_MPG123            OFF)
 
 set(SDL2MIXER_MIDI                  OFF)
@@ -40,8 +38,6 @@ set(SDL2MIXER_VORBIS_VORBISFILE     ON)
 
 set(SDL2MIXER_WAVE                  ON)
 
-set(SDL2MIXER_WAVPACK               ON)
-
 set(SDL2MIXER_SDL2_REQUIRED_VERSION 2.0.9)
 
 if(NOT SDL2MIXER_VENDORED)
@@ -55,19 +51,10 @@ endif()
 
 if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SDL2_mixer-static-targets.cmake")
 
-    include(CMakeFindDependencyMacro)
-    include(PkgConfigHelper)
 
-    if(NOT DEFINED CMAKE_FIND_PACKAGE_PREFER_CONFIG)
-        set(CMAKE_FIND_PACKAGE_PREFER_CONFIG ON)
-    endif()
-
+include(CMakeFindDependencyMacro)
     if(SDL2MIXER_FLAC_LIBFLAC AND NOT SDL2MIXER_VENDORED AND NOT TARGET FLAC::FLAC)
-        find_dependency(FLAC)
-    endif()
-
-    if(SDL2MIXER_GME AND NOT SDL2MIXER_VENDORED AND NOT TARGET gme::gme)
-        find_dependency(gme)
+        find_dependency(FLAC CONFIG)
     endif()
 
     if(SDL2MIXER_MOD_MODPLUG AND NOT SDL2MIXER_VENDORED AND NOT TARGET modplug::modplug)
@@ -82,12 +69,12 @@ if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SDL2_mixer-static-targets.cmake")
         find_dependency(libxmp-lite)
     endif()
 
-    if(SDL2MIXER_MP3_MPG123 AND NOT SDL2MIXER_VENDORED AND NOT TARGET MPG123::mpg123)
-        find_dependency(mpg123)
+    if(SDL2MIXER_MP3_MPG123 AND NOT SDL2MIXER_VENDORED AND NOT TARGET MPG123::libmpg123)
+        find_dependency(MPG123 CONFIG)
     endif()
 
     if(SDL2MIXER_MIDI_FLUIDSYNTH AND NOT SDL2MIXER_VENDORED AND NOT TARGET FluidSynth::libfluidsynth)
-        find_dependency(FluidSynth)
+        find_dependency(FluidSynth CONFIG)
     endif()
 
     if(SDL2MIXER_VORBIS_TREMOR AND NOT SDL2MIXER_VENDORED AND NOT TARGET tremor::tremor)
@@ -95,15 +82,10 @@ if(EXISTS "${CMAKE_CURRENT_LIST_DIR}/SDL2_mixer-static-targets.cmake")
     endif()
 
     if(SDL2MIXER_VORBIS_VORBISFILE AND NOT SDL2MIXER_VENDORED AND NOT TARGET Vorbis::vorbisfile)
-        find_dependency(Vorbis)
+        find_dependency(Vorbis CONFIG)
     endif()
-
     if(SDL2MIXER_OPUS AND NOT SDL2MIXER_VENDORED AND NOT TARGET OpusFile::opusfile)
-        find_dependency(OpusFile)
-    endif()
-
-    if(SDL2MIXER_WAVPACK AND NOT SDL2MIXER_VENDORED AND NOT TARGET WavPack::WavPack)
-        find_dependency(wavpack)
+        find_dependency(OpusFile CONFIG)
     endif()
 
     if((NOT SDL2MIXER_VENDORED AND SDL2MIXER_MOD_MODPLUG) OR (HAIKU AND SDL2MIXER_MIDI_NATIVE))

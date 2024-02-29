@@ -6,7 +6,6 @@ enable_testing()
 
 set(src
         ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
-        main.cpp
 )
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})

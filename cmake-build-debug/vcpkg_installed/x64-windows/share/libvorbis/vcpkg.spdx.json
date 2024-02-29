@@ -3,13 +3,13 @@
   "spdxVersion": "SPDX-2.2",
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
-  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-6acda5b0-ef58-44fd-b8d2-9d6082fb2105",
-  "name": "libvorbis:x64-windows@1.3.7#2 0cb59559838103affe371b068cb3e14b86cba8b23f285ae67ce94f798eceb856",
+  "documentNamespace": "https://spdx.org/spdxdocs/libvorbis-x64-windows-1.3.7#2-1b22fb7d-411b-421d-a852-136f36460437",
+  "name": "libvorbis:x64-windows@1.3.7#2 cf0dc7765626a265b81c122e748667f348b180711307fe1c968cbdc9a1069728",
   "creationInfo": {
     "creators": [
       "Tool: vcpkg-8a83681f921b10d86ae626fd833c253f4f8c355b"
     ],
-    "created": "2024-02-21T11:46:23Z"
+    "created": "2024-02-29T11:19:15Z"
   },
   "relationships": [
     {
@@ -99,7 +99,7 @@
     {
       "name": "libvorbis:x64-windows",
       "SPDXID": "SPDXRef-binary",
-      "versionInfo": "0cb59559838103affe371b068cb3e14b86cba8b23f285ae67ce94f798eceb856",
+      "versionInfo": "cf0dc7765626a265b81c122e748667f348b180711307fe1c968cbdc9a1069728",
       "downloadLocation": "NONE",
       "licenseConcluded": "BSD-3-Clause",
       "licenseDeclared": "NOASSERTION",
@@ -123,7 +123,7 @@
   ],
   "files": [
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0001-Dont-export-vorbisenc-functions.patch",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0001-Dont-export-vorbisenc-functions.patch",
       "SPDXID": "SPDXRef-file-0",
       "checksums": [
         {
@@ -135,7 +135,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0002-Fixup-pkgconfig-libs.patch",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0002-Fixup-pkgconfig-libs.patch",
       "SPDXID": "SPDXRef-file-1",
       "checksums": [
         {
@@ -147,7 +147,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0003-def-mingw-compat.patch",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/0003-def-mingw-compat.patch",
       "SPDXID": "SPDXRef-file-2",
       "checksums": [
         {
@@ -159,7 +159,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/portfile.cmake",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/portfile.cmake",
       "SPDXID": "SPDXRef-file-3",
       "checksums": [
         {
@@ -171,7 +171,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/usage",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/usage",
       "SPDXID": "SPDXRef-file-4",
       "checksums": [
         {
@@ -183,7 +183,7 @@
       "copyrightText": "NOASSERTION"
     },
     {
-      "fileName": "./C:/Users/mariodm1/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/vcpkg.json",
+      "fileName": "./C:/Users/Hugo/.vcpkg-clion/vcpkg/buildtrees/versioning_/versions/libvorbis/c4c646a26ce3e6ad63992d3e4a55cb185159b23c/vcpkg.json",
       "SPDXID": "SPDXRef-file-5",
       "checksums": [
         {
